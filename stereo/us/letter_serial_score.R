@@ -1,5 +1,3 @@
-setwd("/Users/Nadya/Desktop/Research/STEREO/analysis_us")
-
 library(devtools)
 source_url("https://raw.githubusercontent.com/nadyaeiou/nadyasscripts/main/all.R")
 library(ggplot2)
