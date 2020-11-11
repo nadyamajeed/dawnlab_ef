@@ -75,7 +75,7 @@ for(qn in recall.qns){
   responses <- recall.data[, qn]
   scores <- vector()
   for(response in responses){
-    words <- strsplit(response,', ',fixed=TRUE); words <- words[[1]]; words <- sort(words)
+    words <- strsplit(response,', ',fixed=TRUE); words <- words[[1]]; words <- unique(sort(words))
     current_score <- sum(words %in% answers) / length(answers)
     scores <- c(scores, current_score)
     rm(words); rm(current_score)
