@@ -105,7 +105,9 @@ score_stereo_us <- function(rawdata, show_progress = FALSE, distractorScore = "o
   #####
   
   # export
-  write.csv(d.out, paste0("scored", rawdata), row.names = F)
+  if(is_csv) {write.csv(d.out, paste0("scored", rawdata), row.names = F)}
+  if(is_sav) {write_sav(d.out %>% zap_label() %>% zap_labels(), paste0("scored", rawdata))}
+  
   
   # visual inspection
   p <- ggplot(data = d.out, aes(x = distractorAcc, y = recallScore)) +
