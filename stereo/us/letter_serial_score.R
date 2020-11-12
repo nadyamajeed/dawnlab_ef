@@ -17,7 +17,7 @@ score_stereo_us <- function(rawdata, show_progress = FALSE, distractorScore = "o
   if(is_sav) {library(haven); d <- read_sav(rawdata)}
   
   # if not csv or sav, stop function
-  if(!is_csv & !is.sav) stop("rawdata should be in .csv or .sav format!")
+  if(!is_csv & !is_sav) stop("rawdata should be in .csv or .sav format!")
   
   # load participant IDs and get distractor acc
   d.out <- d[ , c("ResponseId", distractorScore)] %>%
