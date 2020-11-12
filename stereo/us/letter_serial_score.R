@@ -20,7 +20,7 @@ score_stereo_us <- function(rawdata, show_progress = FALSE, distractorScore = "o
   if(!is_csv & !is_sav) stop("rawdata should be in .csv or .sav format!")
   
   # load participant IDs and get distractor acc
-  d.out <- d[ , c("ResponseId", distractorScore)] %>%
+  d.out <- d[ , c("ResponseId", distractorScore)]
   d.out$distractorAcc <- d.out[ , distractorScore] / 50
   if(show_progress){head(d.out) %>% print()}
   
