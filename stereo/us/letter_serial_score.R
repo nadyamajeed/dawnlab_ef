@@ -21,7 +21,11 @@ score_stereo_us <- function(rawdata, show_progress = FALSE, distractorScore = "o
   
   # load participant IDs and get distractor acc
   d.out <- d[ , c("ResponseId", distractorScore)]
-  d.out$distractorAcc <- (d.out[ , distractorScore] / 50) %>% as.numeric()
+  d.out$distractorAcc <- d.out[[2]] / 50
+  if(show_progress){head(d.out) %>% print()}
+  
+  # drop raw distractor score row
+  d.out <- d.out[ , c(1, 3)]
   if(show_progress){head(d.out) %>% print()}
   
   # view distractorAcc distribution
@@ -85,8 +89,11 @@ score_stereo_us <- function(rawdata, show_progress = FALSE, distractorScore = "o
     recall.scores[, setname] <- rowMeans(currentset)
   }; rm(setname); rm(currentset)
   
-  # calc acc for each participant
+  # calc overall score for each participant and add
   d.out$recallScore <- recall.scores %>% rowSums(na.rm = T)
+  
+  # add each recall set score
+  d.out <- cbind(d.out, recall.scores)
   
   # print Cronbach's alpha
   if(cronbach) {
