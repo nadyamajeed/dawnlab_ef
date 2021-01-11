@@ -24,7 +24,7 @@ score_stereo_us <- function(rawdata, show_progress = FALSE, distractorScore = "o
   d.out$distractorAcc <- d.out[[2]] / 50
   if(show_progress){head(d.out) %>% print()}
   
-  # drop raw distractor score row
+  # drop raw distractor score col
   d.out <- d.out[ , c(1, 3)]
   if(show_progress){head(d.out) %>% print()}
   
