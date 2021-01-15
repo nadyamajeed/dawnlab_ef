@@ -3,7 +3,7 @@ library(dplyr)
 #####
 
 score_nature2 <- function(
-  rawdata, anskey,
+  rawdata, anskey, serial = TRUE,
   distractor_pattern = "DIST", recall_pattern = "RECALLSET",
   cronbach = TRUE, show_progress = TRUE, debug = FALSE) {
   
@@ -51,44 +51,44 @@ score_nature2 <- function(
   
   # prepare for scoring
   recall.qns <- colnames(recall.ansKey)
-  recall.scores <- data.frame(
-    participantID = d.out$ResponseId,
-    RECALL4A = NA,
-    RECALL4B = NA,
-    RECALL5A = NA,
-    RECALL5B = NA,
-    RECALL6A = NA,
-    RECALL6B = NA
-  ) %>%
-    dplyr::select(-participantID)
-  recall.sets <- colnames(recall.scores)
+  recall.scores <- data.frame(participantID = d.out$ResponseId)
   
   # score recall trials
-  recall.data.scored <- recall.data
   for(qn in recall.qns){
     
-    answer <- recall.ansKey[1, qn]
+    # extract answers for this set
+    answers <- strsplit(as.character(recall.ansKey[1, qn]),',',fixed=TRUE)
+    answers <- answers[[1]] %>% trimws()
+    if(show_progress | debug){cat("Set size is:", length(answers), "\n"); cat("Answers are:"); print(answers)}
     
-    if(show_progress){
-      cat("\nNow scoring:", qn)
-      cat("\nAnswer is:", answer, "\n")
+    # extract participants' responses for this set
+    responses <- recall.data[, qn]
+    scores <- vector()
+    # look at each participant
+    for(response in responses){
+      # extract
+      words <- strsplit(response,',',fixed=TRUE); words <- words[[1]] %>% trimws()
+      # score each response for this participant (SERIAL)
+      if(serial){
+        current_score <- 0
+        for(i in 1:length(answers)){if(i <= length(words)){if(words[i] == answers[i]){current_score <- current_score + 1}}}
+        current_score <- current_score / length(answers)
+      }
+      # score each response for this participant (NON-SERIAL)
+      if(!serial){
+        words <- unique(sort(words))
+        current_score <- sum(words %in% answers) / length(answers)
+      }
+      # record this participant's score
+      scores <- c(scores, current_score)
     }
     
-    recall.data.scored[, qn] <- ifelse(recall.data.scored[, qn] == answer, 1, 0)
-  }; rm(qn); rm(answer)
-  
-  # score recall sets
-  for(setname in recall.sets){
-    currentset <- recall.data.scored %>% dplyr::select(contains(setname))
-    if(show_progress){
-      cat("\nNow calculating set PCU:", setname, "\n")
-      head(currentset) %>% print()
-    }
-    recall.scores[, setname] <- rowMeans(currentset)
-  }; rm(setname); rm(currentset)
+    # record all participants' scores for this set
+    recall.scores[, qn] <- scores
+  } 
   
   # calc overall score for each participant and add
-  d.out$recallScore <- recall.scores %>% rowSums(na.rm = T)
+  d.out$recallScore <- recall.scores %>% dplyr::select(-participantID) %>% rowSums(na.rm = T)
   
   # add each recall set score
   d.out <- cbind(d.out, recall.scores)
