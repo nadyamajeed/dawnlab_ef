@@ -21,7 +21,7 @@ score_nature2 <- function(
   if(!is_csv & !is_sav) stop("rawdata should be in .csv or .sav format!")
   
   # if debug, show
-  if(debug) {print(head(d))}
+  if(debug) {cat("\nDebug point 1"); print(head(d))}
   
   # compute distractor acc and match to participant IDs
   d.out <- d %>% dplyr::select(contains(distractor_pattern))
@@ -29,6 +29,7 @@ score_nature2 <- function(
   d.out$distractorAcc[is.nan(d.out$distractorAcc)] <- NA
   d.out$ResponseId <- d$ResponseId
   d.out <- d.out %>% dplyr::select(ResponseId, distractorAcc)
+  if(debug) {cat("\nDebug point 2")}
   if(show_progress | debug){head(d.out) %>% print()}
   
   # view distractorAcc distribution
@@ -41,16 +42,18 @@ score_nature2 <- function(
   
   # load set size and ans key
   recall.ansKey <- read.csv(anskey, colClasses = "character")
+  if(debug) {cat("\nDebug point 3")}
   if(show_progress | debug){head(recall.ansKey) %>% print()}
   
   # load recall data
   recall.data <- d %>%
     dplyr::select(contains(recall_pattern)) %>%
     dplyr::mutate_all(.funs = trimws)
+  if(debug) {cat("\nDebug point 4")}
   if(show_progress | debug){head(recall.data) %>% print()}
   
   # prepare for scoring
-  recall.qns <- colnames(recall.ansKey); if(debug) {cat("Columns to score are:"); print(recall.qns)}
+  recall.qns <- colnames(recall.ansKey); if(debug) {cat("\nDebug point 5\nColumns to score are:"); print(recall.qns)}
   recall.scores <- data.frame(participantID = d.out$ResponseId)
   
   # score recall trials
@@ -59,10 +62,11 @@ score_nature2 <- function(
     # extract answers for this set
     answers <- strsplit(as.character(recall.ansKey[1, qn]),',',fixed=TRUE)
     answers <- answers[[1]] %>% trimws()
+    if(debug) {cat("\nDebug point 6")}
     if(show_progress | debug){cat("Set size is:", length(answers), "\n"); cat("Answers are:"); print(answers)}
     
     # extract participants' responses for this set
-    responses <- recall.data[, qn]
+    responses <- recall.data[, qn] %>% as.character()
     scores <- vector()
     # look at each participant
     for(response in responses){
@@ -80,24 +84,28 @@ score_nature2 <- function(
         current_score <- sum(words %in% answers) / length(answers)
       }
       # record this participant's score
+      if(is.nan(current_score)) {current_score <- NA}
       scores <- c(scores, current_score)
     }
     
     # record all participants' scores for this set
+    if(debug) {cat("\nDebug point 7"); print(head(scores))}
     recall.scores[, qn] <- scores
   } 
-  
-  # calc overall score for each participant and add
-  d.out$recallScore <- recall.scores %>% dplyr::select(-participantID) %>% rowSums(na.rm = T)
-  
-  # add each recall set score
-  d.out <- cbind(d.out, recall.scores)
   
   # print Cronbach's alpha
   if(cronbach) {
     if("psych" %in% rownames(installed.packages()) == FALSE) {install.packages("psych")}
     psych::alpha(recall.scores, check.keys = FALSE) %>% print()
   }
+  
+  # calc overall score for each participant and add
+  if(debug) {cat("\nDebug point 8"); print(head(recall.scores))}
+  d.out$recallScore <- recall.scores %>% dplyr::select(-participantID) %>% rowSums(na.rm = T)
+  
+  # add each recall set score
+  d.out <- cbind(d.out, recall.scores)
+  if(debug) {cat("\nDebug point 9\nPassed all debug points.")}
   
   #####
   
