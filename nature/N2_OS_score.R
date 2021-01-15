@@ -111,7 +111,7 @@ score_nature2 <- function(
   p <- ggplot(data = d.out, aes(x = distractorAcc, y = recallScore)) +
     geom_point(size = 0.25) +
     geom_vline(xintercept = 0.65, color = "red") +
-    ylim(c(0, length(recall.qns)) + xlim(c(0, 1)) +
+    ylim(c(0, length(recall.qns))) + xlim(c(0, 1)) +
     theme_classic()
   print(p)
   
