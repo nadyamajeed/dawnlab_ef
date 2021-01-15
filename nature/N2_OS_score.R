@@ -102,8 +102,9 @@ score_nature2 <- function(
   #####
   
   # export
-  if(is_csv) {write.csv(d.out, paste0("scored", rawdata), row.names = F)}
-  if(is_sav) {haven::write_sav(d.out %>% haven::zap_label() %>% haven::zap_labels(), paste0("scored", rawdata))}
+  prefix = ifelse(serial, "scoredSerial_", "scoredNonserial_")
+  if(is_csv) {write.csv(d.out, paste0(prefix, rawdata), row.names = F)}
+  if(is_sav) {haven::write_sav(d.out %>% haven::zap_label() %>% haven::zap_labels(), paste0(prefix, rawdata))}
   
   # visual inspection
   library(ggplot2)
