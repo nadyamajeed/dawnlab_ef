@@ -1,8 +1,11 @@
-devtools::source_url("https://raw.githubusercontent.com/nadyaeiou/nadyasscripts/main/all.R")
+library(dplyr)
 
 #####
 
-score_nature2 <- function(rawdata, anskey, show_progress = TRUE, cronbach = TRUE) {
+score_nature2 <- function(
+  rawdata, anskey,
+  distractor_pattern = "DIST", recall_pattern = "RECALLSET",
+  cronbach = TRUE, show_progress = TRUE, debug = FALSE) {
   
   starttime <- Sys.time()
   
@@ -17,12 +20,16 @@ score_nature2 <- function(rawdata, anskey, show_progress = TRUE, cronbach = TRUE
   # if not csv or sav, stop function
   if(!is_csv & !is_sav) stop("rawdata should be in .csv or .sav format!")
   
+  # if debug, show
+  if(debug) {print(head(d))}
+  
   # compute distractor acc and match to participant IDs
-  d.out <- d %>% dplyr::select(contains("DIST"))
+  d.out <- d %>% dplyr::select(contains(distractor_pattern))
   d.out$distractorAcc <- rowMeans(d.out, na.rm = TRUE)
+  d.out$distractorAcc[is.nan(d.out$distractorAcc)] <- NA
   d.out$ResponseId <- d$ResponseId
   d.out <- d.out %>% dplyr::select(ResponseId, distractorAcc)
-  if(show_progress){head(d.out) %>% print()}
+  if(show_progress | debug){head(d.out) %>% print()}
   
   # view distractorAcc distribution
   p <- ggplot(data = d.out, aes(x = distractorAcc)) +
@@ -34,25 +41,25 @@ score_nature2 <- function(rawdata, anskey, show_progress = TRUE, cronbach = TRUE
   
   # load set size and ans key
   recall.ansKey <- read.csv(anskey, colClasses = "character")
-  if(show_progress){head(recall.ansKey) %>% print()}
+  if(show_progress | debug){head(recall.ansKey) %>% print()}
   
   # load recall data
   recall.data <- d %>%
-    dplyr::select(contains("OS_W")) %>%
+    dplyr::select(contains(recall_pattern)) %>%
     dplyr::mutate_all(.funs = trimws)
-  if(show_progress){head(recall.data) %>% print()}
+  if(show_progress | debug){head(recall.data) %>% print()}
   
   # prepare for scoring
   recall.qns <- colnames(recall.ansKey)
   recall.scores <- data.frame(
     participantID = d.out$ResponseId,
-    W4a = NA,
-    W4b = NA,
-    W5a = NA,
-    W5b = NA,
-    W6a = NA,
-    W6b = NA
-    ) %>%
+    RECALL4A = NA,
+    RECALL4B = NA,
+    RECALL5A = NA,
+    RECALL5B = NA,
+    RECALL6A = NA,
+    RECALL6B = NA
+  ) %>%
     dplyr::select(-participantID)
   recall.sets <- colnames(recall.scores)
   
