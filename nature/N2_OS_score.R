@@ -50,7 +50,7 @@ score_nature2 <- function(
   if(show_progress | debug){head(recall.data) %>% print()}
   
   # prepare for scoring
-  recall.qns <- colnames(recall.ansKey)
+  recall.qns <- colnames(recall.ansKey); if(debug) {cat("Columns to score are:"); print(recall.qns)}
   recall.scores <- data.frame(participantID = d.out$ResponseId)
   
   # score recall trials
