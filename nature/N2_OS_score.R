@@ -90,8 +90,12 @@ score_nature2 <- function(
     
     # record all participants' scores for this set
     if(debug) {cat("\nDebug point 7"); print(head(scores))}
-    recall.scores[, qn] <- scores
+    recall.scores[, qn] <- scores %>% as.numeric()
   } 
+  
+  # drop participantID row from recall.scores to allow further processing
+  recall.scores <- recall.scores %>% dplyr::select(-participantID) %>% as.data.frame()
+  if(debug) {cat("\nDebug point 8"); print(head(recall.scores)); print(class(recall.scores))}
   
   # print Cronbach's alpha
   if(cronbach) {
@@ -100,12 +104,12 @@ score_nature2 <- function(
   }
   
   # calc overall score for each participant and add
-  if(debug) {cat("\nDebug point 8"); print(head(recall.scores))}
-  d.out$recallScore <- recall.scores %>% dplyr::select(-participantID) %>% rowSums(na.rm = T)
+  d.out$recallScore <- recall.scores %>% rowSums(na.rm = T)
+  if(debug) {cat("\nDebug point 9"); print(d.out$recallScore)}
   
   # add each recall set score
   d.out <- cbind(d.out, recall.scores)
-  if(debug) {cat("\nDebug point 9\nPassed all debug points.")}
+  if(debug) {cat("\nDebug point 10\nPassed all debug points.")}
   
   #####
   
