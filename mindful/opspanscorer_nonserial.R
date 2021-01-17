@@ -1,5 +1,4 @@
-library(devtools)
-source_url("https://raw.githubusercontent.com/nadyaeiou/nadyasscripts/main/all.R")
+devtools::source_url("https://raw.githubusercontent.com/nadyamajeed/helperscripts/main/all.R")
 
 #####
 
