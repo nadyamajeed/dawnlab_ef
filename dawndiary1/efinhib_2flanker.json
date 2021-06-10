@@ -1,0 +1,250 @@
+{
+    "name": "[2] Click to begin. Do not exit fullscreen until you have completed all tasks.",
+    "author": "DawnLab @ SMU, tasks adapted from University of Zurich (von Bastian, Souza, & Gade)",
+    "label": "efinhib_2flanker",
+    "export": [{
+        "mode": "upload",
+        "auto": true,
+        "enabled": true,
+        "$$hashKey": "object:2052"
+    }, {
+        "mode": "download",
+        "enabled": true,
+        "$$hashKey": "object:1923"
+    }],
+    "allowEscapeKey": true,
+    "fullscreen": true,
+    "moduleHierarchy": {
+        "label": "Task List",
+        "tatoolType": "List",
+        "iterator": {
+            "customType": "ListIterator",
+            "numIterations": 1,
+            "order": "sequential"
+        },
+        "children": [{
+            "label": "Task List",
+            "tatoolType": "List",
+            "iterator": {
+                "customType": "ListIterator",
+                "numIterations": 1,
+                "order": "sequential"
+            },
+            "children": [{
+                "tatoolType": "Executable",
+                "customType": "tatoolInstruction",
+                "name": "flanker_instruction_1",
+                "blankInterval": 0,
+                "fixationInterval": "0",
+                "project": {
+                    "name": "tatool",
+                    "access": "public"
+                },
+                "pages": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": [{
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceName": "inhibit_flanker_01.htm",
+                        "resourceType": "instructions"
+                    }, {
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceType": "instructions",
+                        "resourceName": "inhibit_flanker_02.htm"
+                    }, {
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceType": "instructions",
+                        "resourceName": "inhibit_flanker_03.htm"
+                    }]
+                },
+                "images": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": []
+                }
+            }, {
+                "tatoolType": "Executable",
+                "customType": "tatoolCountdown",
+                "name": "countdown",
+                "blankInterval": 0,
+                "fixationInterval": "0",
+                "project": {
+                    "name": "tatool",
+                    "access": "public"
+                },
+                "hideMouseCursor": true
+            }, {
+                "tatoolType": "List",
+                "name": "ky5k5i7o17hhyqfr",
+                "iterator": {
+                    "customType": "ListIterator",
+                    "numIterations": 12,
+                    "order": "sequential"
+                },
+                "handlers": [],
+                "children": [{
+                    "tatoolType": "Executable",
+                    "customType": "tatoolChoiceReaction",
+                    "name": "flanker_practice",
+                    "blankInterval": "0",
+                    "fixationInterval": 250,
+                    "project": {
+                        "name": "tatool",
+                        "access": "public"
+                    },
+                    "stimuliPath": {
+                        "propertyType": "Path",
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceName": "",
+                        "resourceType": "stimuli"
+                    },
+                    "stimuliFile": {
+                        "propertyType": "Resource",
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceName": "ef_inhibition_flanker_practice.csv",
+                        "resourceType": "stimuli"
+                    },
+                    "showKeys": {
+                        "propertyType": "Boolean",
+                        "propertyValue": true
+                    },
+                    "timerEnabled": {
+                        "propertyType": "Boolean",
+                        "propertyValue": false
+                    },
+                    "status": {
+                        "feedbackPanel": true
+                    },
+                    "hideMouseCursor": true
+                }],
+                "label": "flanker_practice"
+            }, {
+                "tatoolType": "Executable",
+                "customType": "tatoolInstruction",
+                "name": "flanker_instruction_2",
+                "blankInterval": 0,
+                "fixationInterval": "0",
+                "project": {
+                    "name": "tatool",
+                    "access": "public"
+                },
+                "pages": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": [{
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceName": "inhibit_flanker_04.htm",
+                        "resourceType": "instructions"
+                    }]
+                },
+                "images": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": []
+                }
+            }, {
+                "tatoolType": "Executable",
+                "customType": "tatoolCountdown",
+                "name": "countdown",
+                "blankInterval": 0,
+                "fixationInterval": "0",
+                "project": {
+                    "name": "tatool",
+                    "access": "public"
+                },
+                "hideMouseCursor": true
+            }, {
+                "tatoolType": "List",
+                "name": "qqxp8n93d7bke290",
+                "iterator": {
+                    "customType": "ListIterator",
+                    "numIterations": 200,
+                    "order": "sequential"
+                },
+                "handlers": [],
+                "children": [{
+                    "tatoolType": "Executable",
+                    "customType": "tatoolChoiceReaction",
+                    "name": "flanker_test",
+                    "blankInterval": 0,
+                    "fixationInterval": 250,
+                    "project": {
+                        "name": "tatool",
+                        "access": "public"
+                    },
+                    "stimuliPath": {
+                        "propertyType": "Path",
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceName": "",
+                        "resourceType": "stimuli"
+                    },
+                    "stimuliFile": {
+                        "propertyType": "Resource",
+                        "project": {
+                            "name": "uzh-ef-battery",
+                            "access": "public"
+                        },
+                        "resourceName": "ef_inhibition_flanker.csv",
+                        "resourceType": "stimuli"
+                    },
+                    "showKeys": {
+                        "propertyType": "Boolean",
+                        "propertyValue": true
+                    },
+                    "timerEnabled": {
+                        "propertyType": "Boolean",
+                        "propertyValue": false
+                    },
+                    "hideMouseCursor": true
+                }],
+                "label": "Flanker"
+            }, {
+                "tatoolType": "Executable",
+                "customType": "tatoolInstruction",
+                "name": "end",
+                "blankInterval": 0,
+                "fixationInterval": "0",
+                "project": {
+                    "name": "tatool",
+                    "access": "public"
+                },
+                "pages": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": [{
+                        "project": {
+                            "name": "tatool-stimuli",
+                            "access": "public"
+                        },
+                        "resourceName": "end.html",
+                        "resourceType": "instructions"
+                    }]
+                },
+                "images": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": []
+                }
+            }]
+        }]
+    },
+    "description": "Inhibition (Flanker) task from von Bastian, C. C. Souza, A. S., & Gade, M. (2016). No evidence for bilingual cognitive advantages: A test of four hypotheses. Journal of Experimental Psychology: General. doi: 10.1037/xge0000120",
+    "exportDelimiter": ",",
+    "exportFormat": "long",
+    "moduleMaxSessions": null
+}
