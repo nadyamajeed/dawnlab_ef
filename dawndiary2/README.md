@@ -1,7 +1,7 @@
 # Battery of 9 EF Tasks
-To work on Tatool Web
-Prepared for Dawn Diary 2
-by Nadyanna M. Majeed and Wei Ming Ooi
+* To work on Tatool Web
+* Prepared for Dawn Diary 2
+* by Nadyanna M. Majeed and Wei Ming Ooi
 
 ## UPDATING TASKS
 1.
