@@ -1,0 +1,265 @@
+{
+  "name": "EF Battery: Updating (Letter)",
+  "author": "University of Zurich (von Bastian, Souza, & Gade)",
+  "label": "ef_updating",
+  "export": [
+    {
+      "mode": "upload",
+      "auto": true,
+      "enabled": true,
+      "$$hashKey": "object:72128"
+    },
+    {
+      "mode": "download",
+      "enabled": true,
+      "$$hashKey": "object:71869"
+    }
+  ],
+  "allowEscapeKey": true,
+  "fullscreen": true,
+  "moduleHierarchy": {
+    "label": "Task List",
+    "tatoolType": "List",
+    "iterator": {
+      "customType": "ListIterator",
+      "numIterations": 1,
+      "order": "sequential"
+    },
+    "children": [
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "letter_instruction_1",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "pages": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceName": "updating_letter_01.htm",
+              "resourceType": "instructions"
+            },
+            {
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceType": "instructions",
+              "resourceName": "updating_letter_02.htm"
+            },
+            {
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceType": "instructions",
+              "resourceName": "updating_letter_03.htm"
+            },
+            {
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceType": "instructions",
+              "resourceName": "updating_letter_04.htm"
+            }
+          ]
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": []
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "hideMouseCursor": true
+      },
+      {
+        "tatoolType": "List",
+        "name": "ky5k5i7o17hhyqfr",
+        "iterator": {
+          "customType": "ListIterator",
+          "numIterations": 3,
+          "order": "sequential"
+        },
+        "handlers": [],
+        "children": [
+          {
+            "tatoolType": "Executable",
+            "customType": "letterKeepTrack",
+            "name": "letter_practice",
+            "blankInterval": 0,
+            "fixationInterval": 0,
+            "project": {
+              "name": "uzh-ef-battery",
+              "access": "public"
+            },
+            "stimuliPath": {
+              "propertyType": "Path",
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceName": "",
+              "resourceType": "stimuli"
+            },
+            "stimuliFile": {
+              "propertyType": "Resource",
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceName": "ef_updating_letter_practice.csv",
+              "resourceType": "stimuli"
+            },
+            "status": {
+              "feedbackPanel": true
+            },
+            "hideMouseCursor": false,
+            "displayEncodingDuration": "5000",
+            "intervalEncodingDuration": "250",
+            "displayUpdatingDuration": "1250",
+            "intervalUpdatingDuration": "250"
+          }
+        ],
+        "label": "Letter practice"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "letter_instruction_2",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "pages": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceName": "updating_letter_05.htm",
+              "resourceType": "instructions"
+            }
+          ]
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": []
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "hideMouseCursor": true
+      },
+      {
+        "tatoolType": "List",
+        "name": "qqxp8n93d7bke290",
+        "iterator": {
+          "customType": "ListIterator",
+          "numIterations": 25,
+          "order": "sequential"
+        },
+        "handlers": [],
+        "children": [
+          {
+            "tatoolType": "Executable",
+            "customType": "letterKeepTrack",
+            "name": "letter_test",
+            "blankInterval": 0,
+            "fixationInterval": 0,
+            "project": {
+              "name": "uzh-ef-battery",
+              "access": "public"
+            },
+            "stimuliPath": {
+              "propertyType": "Path",
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceName": "",
+              "resourceType": "stimuli"
+            },
+            "stimuliFile": {
+              "propertyType": "Resource",
+              "project": {
+                "name": "uzh-ef-battery",
+                "access": "public"
+              },
+              "resourceName": "ef_updating_letter.csv",
+              "resourceType": "stimuli"
+            },
+            "hideMouseCursor": false,
+            "displayEncodingDuration": "5000",
+            "intervalEncodingDuration": "250",
+            "displayUpdatingDuration": "1250",
+            "intervalUpdatingDuration": "250"
+          }
+        ],
+        "label": "Letter"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "end",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "pages": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "tatool-stimuli",
+                "access": "public"
+              },
+              "resourceName": "end.html",
+              "resourceType": "instructions"
+            }
+          ]
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": []
+        }
+      }
+    ]
+
+  },
+  "description": "Updating task (Letter) from von Bastian, C. C. Souza, A. S., & Gade, M. (2016). No evidence for bilingual cognitive advantages: A test of four hypotheses. Journal of Experimental Psychology: General. doi: 10.1037/xge0000120",
+  "exportDelimiter": ",",
+  "exportFormat": "long",
+  "moduleMaxSessions": null
+}
