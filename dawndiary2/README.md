@@ -16,7 +16,7 @@ In Dawn Diary 1, intead of *updating ability*, we assessed *working memory capac
 3. Stroop
 
 ## Switching Tasks
-1. Animacy locomotion
+1. Animacy locomotion ([source](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-shifting-battery))
 2. Colour shape
 3. Magnitude parity
 
