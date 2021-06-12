@@ -1,7 +1,7 @@
 # Battery of 9 EF Tasks for DAWNDIARY2
 * To work on [Tatool Web](http://www.tatool-web.com/)
 * Prepared for Dawn Diary 2
-* By **Nadyanna M. Majeed** and **Wei Ming Ooi**
+* By **[Nadyanna M. Majeed](https://github.com/nadyamajeed)** and **[Wei Ming Ooi](https://github.com/weiming-smu)**
 * Adapted from
     * [Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery) (von Bastian, Souza, & Gade, 2016)
     * [Shifting Battery—Judgment—Animacy/Airworthyness](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-shifting-battery) (Mayr & Kliegl, 2000)
