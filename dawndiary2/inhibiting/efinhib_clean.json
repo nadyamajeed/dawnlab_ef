@@ -1,7 +1,7 @@
 {
-    "name": "[Daily Experiences & Emotions] Click to begin. Do not exit fullscreen until you have completed all tasks.",
+    "name": "[I-FULL] [Dawn Cognition Task] Click to begin. Do not exit fullscreen until you have completed all tasks.",
     "author": "DawnLab @ SMU, tasks adapted from University of Zurich (von Bastian, Souza, & Gade)",
-    "label": "efinhib",
+    "label": "dawn_ef_ifull",
     "export": [{
         "mode": "upload",
         "auto": true,
