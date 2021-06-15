@@ -18,9 +18,11 @@ In Dawn Diary 1, intead of *updating ability*, we assessed *working memory capac
 2. Flanker ([Github source: Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery))
 3. Stroop ([Github source: Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery))
 
+The three inhibiting tasks are exactly the same as those used in Dawn Diary 1.
+
 ## Switching Tasks
 1. Animacy locomotion ([Github source: Shifting Battery—Judgment—Animacy/Airworthyness](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-shifting-battery))
 2. Colour shape ([Github source: Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery))
 3. Magnitude parity ([Github source: Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery))
 
-In Dawn Diary 1, intead of *animacy locomotion* (A/L) switching, we assessed *animacy size* (A/S) switching. A/S was swapped to A/L as participants had difficulty with the size trials.
+In Dawn Diary 1, intead of *animacy locomotion* (A/L) switching, we assessed *animacy size* (A/S) switching. A/S was swapped to A/L as participants had difficulty with the size trials. The *magnitude parity* task instructions have also been corrected in Dawn Diary 2.
