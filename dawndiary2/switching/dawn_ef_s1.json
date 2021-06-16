@@ -1,0 +1,846 @@
+{
+  "name": "[S-1] [Dawn Cognition Task] Click to begin. Do not exit fullscreen until you have completed all tasks.",
+  "author": "DawnLab @ SMU, tasks adapted from University of Zurich (von Bastian, Souza, & Gade)",
+  "label": "dawn_ef_s1",
+  "export": [
+    {
+      "mode": "upload",
+      "auto": true,
+      "enabled": true,
+      "$$hashKey": "object:6445"
+    },
+    {
+      "mode": "download",
+      "enabled": true,
+      "$$hashKey": "object:6298"
+    }
+  ],
+  "allowEscapeKey": true,
+  "fullscreen": true,
+  "moduleHierarchy": {
+    "label": "Task List",
+    "children": [
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_single_animacy_practice",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "hideMouseCursor": true,
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_general_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_animacy_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_animacy_02.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_animacy_03.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "countdown": "3",
+        "interval": "1000"
+      },
+      {
+        "label": "Single animacy practice",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "status": {
+              "feedbackPanel": true
+            },
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496147/ef_switching/ef_switching_category_single_animacy_practice.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": "250",
+            "name": "category_single_animacy_practice",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 12,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "fwbxosx43tqhbyb9",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_single_animacy_1",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_animacy_04.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single animacy 1",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496147/ef_switching/ef_switching_category_single_animacy_1.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": 0,
+            "name": "category_single_animacy_1",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "60j80jyos4kuik90",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_single_airyness_practice",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_air_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_air_02.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_air_03.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single airyness practice",
+        "children": [
+          {
+            "status": {
+              "feedbackPanel": true
+            },
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496147/ef_switching/ef_switching_category_single_airyness_practice.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": "250",
+            "name": "category_single_airyness_practice",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 12,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "53ka7sf6lm6j38fr",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_single_airyness_1",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_air_04.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single airyness 1",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496146/ef_switching/ef_switching_category_single_airyness_1.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": 0,
+            "name": "category_single_airyness_1",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "qesqiwnnxparwwmi",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_mixed_practice",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_mixed_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_mixed_02.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_mixed_03.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_mixed_04.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Mixed practice",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "status": {
+              "feedbackPanel": true
+            },
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496146/ef_switching/ef_switching_category_mixed_practice.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceType": "stimuli",
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": "250",
+            "name": "category_mixed_practice",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 12,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "5z5drc12hfgbke29",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_mixed",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_mixed_05.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Mixed",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496146/ef_switching/ef_switching_category_mixed.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": 0,
+            "name": "category_mixed",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 129,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "3o7b0agioro7ds4i",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_single_airyness_2",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_air_05.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_air_06.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single airyness 2",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496146/ef_switching/ef_switching_category_single_airyness_2.csv",
+              "resourceType": "stimuli",
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": 0,
+            "name": "category_single_airyness_2",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "zi2u5tuvye6d2t90",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "category_instruction_single_animacy_2",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_animacy_05.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/shifting_cat_single_animacy_06.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single animacy 2",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1623496147/ef_switching/ef_switching_category_single_animacy_2.csv",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 250,
+            "blankInterval": 0,
+            "name": "category_single_animacy_2",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "he9of0wrri3eg66r",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "end",
+        "blankInterval": 0,
+        "fixationInterval": 250,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching/end.png"
+            }
+          ]
+        }
+      }
+    ],
+    "iterator": {
+      "numIterations": 1,
+      "customType": "ListIterator",
+      "order": "sequential"
+    },
+    "tatoolType": "List"
+  },
+  "description": "EF tasks adapted from von Bastian, C. C. Souza, A. S., & Gade, M. (2016). No evidence for bilingual cognitive advantages: A test of four hypotheses. Journal of Experimental Psychology: General. doi: 10.1037/xge0000120",
+  "exportDelimiter": ",",
+  "exportFormat": "long",
+  "moduleMaxSessions": null,
+  "moduleBackground": "",
+  "moduleForwardUrl": ""
+}
