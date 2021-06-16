@@ -1,7 +1,7 @@
 {
     "name": "[I-1] [Dawn Cognition Task] Click to begin. Do not exit fullscreen until you have completed all tasks.",
     "author": "DawnLab @ SMU, tasks adapted from University of Zurich (von Bastian, Souza, & Gade)",
-    "label": "dawn_ef_i1",
+    "label": "dawnefi1",
     "export": [{
         "mode": "upload",
         "auto": true,
