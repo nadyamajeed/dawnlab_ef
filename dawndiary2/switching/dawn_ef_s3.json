@@ -1,0 +1,842 @@
+{
+  "moduleHierarchy": {
+    "label": "Task List",
+    "children": [
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_single_parity_practice",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_general_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_parity_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_parity_02.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_parity_03.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "countdown": "3",
+        "interval": "1000"
+      },
+      {
+        "label": "Single parity practice",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "status": {
+              "feedbackPanel": true
+            },
+            "displayCueDuration": "250",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1626291729/ef_switching_3/ef_shifting_numerical_single_parity_practice.csv",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": "250",
+            "name": "numerical_single_parity_practice",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 12,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "fwbxosx43tqhbyb9",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_single_parity_1",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_parity_04.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single parity 1",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1626291729/ef_switching_3/ef_shifting_numerical_single_parity_1.csv",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": 0,
+            "name": "numerical_single_parity_1",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "60j80jyos4kuik90",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_single_magnitude_practice",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_magnitude_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_magnitude_02.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_magnitude_03.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single magnitude practice",
+        "children": [
+          {
+            "status": {
+              "feedbackPanel": true
+            },
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "ef_shifting_numerical_single_magnitude_practice.csv",
+              "project": {
+                "access": "public",
+                "name": "uzh-ef-battery"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "public",
+                "name": "uzh-ef-battery"
+              },
+              "propertyType": "Path"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": "250",
+            "name": "numerical_single_magnitude_practice",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 12,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "53ka7sf6lm6j38fr",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_single_magnitude_1",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_magnitude_04.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single magnitude 1",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "ef_shifting_numerical_single_magnitude_1.csv",
+              "project": {
+                "access": "public",
+                "name": "uzh-ef-battery"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "public",
+                "name": "uzh-ef-battery"
+              },
+              "propertyType": "Path"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": 0,
+            "name": "numerical_single_magnitude_1",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "qesqiwnnxparwwmi",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_mixed_practice",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_mixed_01.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_mixed_02.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_mixed_03.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_mixed_04.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Mixed practice",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "status": {
+              "feedbackPanel": true
+            },
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1626291729/ef_switching_3/ef_shifting_numerical_mixed_practice.csv",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": "250",
+            "name": "numerical_mixed_practice",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 12,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "5z5drc12hfgbke29",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_mixed",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_mixed_05.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Mixed",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1626291730/ef_switching_3/ef_shifting_numerical_mixed.csv",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": 0,
+            "name": "numerical_mixed",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 129,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "3o7b0agioro7ds4i",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_single_magnitude_2",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_magnitude_05.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_magnitude_06.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single magnitude 2",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "project": {
+                "access": "public",
+                "name": "uzh-ef-battery"
+              },
+              "resourceName": "ef_shifting_numerical_single_magnitude_2.csv",
+              "resourceType": "stimuli",
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "public",
+                "name": "uzh-ef-battery"
+              },
+              "propertyType": "Path"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": 0,
+            "name": "numerical_single_magnitude_2",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": 64,
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "zi2u5tuvye6d2t90",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "numerical_instruction_single_parity_2",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_parity_05.png"
+            },
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/shifting_num_single_parity_06.png"
+            }
+          ]
+        }
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolCountdown",
+        "name": "countdown",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        }
+      },
+      {
+        "label": "Single parity 2",
+        "children": [
+          {
+            "hideMouseCursor": true,
+            "displayCueDuration": "150",
+            "timerEnabled": {
+              "propertyValue": false,
+              "propertyType": "Boolean"
+            },
+            "showKeys": {
+              "propertyValue": true,
+              "propertyType": "Boolean"
+            },
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "https://res.cloudinary.com/owmsmu/raw/upload/v1626291729/ef_switching_3/ef_shifting_numerical_single_parity_2.csv",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "external",
+                "name": "External Resource"
+              },
+              "propertyType": "Path",
+              "resourcePath": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": "250",
+            "blankInterval": 0,
+            "name": "numerical_single_parity_2",
+            "customType": "tatoolShifting",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [
+        ],
+        "iterator": {
+          "numIterations": "64",
+          "customType": "ListIterator",
+          "order": "sequential"
+        },
+        "name": "he9of0wrri3eg66r",
+        "tatoolType": "List"
+      },
+      {
+        "tatoolType": "Executable",
+        "customType": "tatoolInstruction",
+        "name": "end",
+        "blankInterval": 0,
+        "fixationInterval": 0,
+        "project": {
+          "name": "tatool",
+          "access": "public"
+        },
+        "images": {
+          "propertyType": "ArrayResource",
+          "propertyValue": [
+            {
+              "project": {
+                "name": "External Resource",
+                "access": "external"
+              },
+              "resourceName": "https://res.cloudinary.com/owmsmu/image/upload/ef_switching_3/end.png"
+            }
+          ]
+        }
+      }
+    ],
+    "iterator": {
+      "numIterations": 1,
+      "customType": "ListIterator",
+      "order": "sequential"
+    },
+    "tatoolType": "List"
+  },
+  "fullscreen": true,
+  "allowEscapeKey": true,
+  "export": [
+    {
+      "enabled": true,
+      "auto": true,
+      "mode": "upload",
+      "$$hashKey": "object:1782"
+    },
+    {
+      "enabled": true,
+      "mode": "download",
+      "$$hashKey": "object:1643"
+    }
+  ],
+  "label": "dawn_ef_s3",
+  "author": "DawnLab @ SMU, tasks adapted from University of Zurich (von Bastian, Souza, & Gade)",
+  "name": "[S-3] [Dawn Cognition Task] Click to begin. Do not exit fullscreen until you have completed all tasks.",
+  "description": "Parity-Magnitude Shifting task adapted from von Bastian, C. C. Souza, A. S., & Gade, M. (2016). No evidence for bilingual cognitive advantages: A test of four hypotheses. Journal of Experimental Psychology: General. doi: 10.1037/xge0000120",
+  "exportDelimiter": ",",
+  "exportFormat": "long",
+  "moduleMaxSessions": null,
+  "moduleBackground": "",
+  "moduleForwardUrl": ""
+}
