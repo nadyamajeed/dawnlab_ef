@@ -25,4 +25,4 @@ The three inhibiting tasks are exactly the same as those used in Dawn Diary 1.
 2. Colour shape ([Github source: Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery))
 3. Magnitude parity ([Github source: Executive Functions Battery](https://github.com/tatool/tatool-web/tree/master/app/projects/public/uzh-ef-battery))
 
-In Dawn Diary 1, intead of *animacy locomotion* (A/L) switching, we assessed *animacy size* (A/S) switching. A/S was swapped to A/L as participants had difficulty with the size trials. The *magnitude parity* task instructions have also been corrected in Dawn Diary 2.
+In Dawn Diary 1, intead of *animacy locomotion* (A/L) switching, we assessed *animacy size* (A/S) switching. A/S was swapped to A/L as participants had difficulty with the size trials. The A/L task in this battery was adapted from the *Shifting Battery*, with single-cue blocks added in a sandwich format to match the colour shape and magnitude parity tasks. The *magnitude parity* task instructions have also been corrected in Dawn Diary 2.
