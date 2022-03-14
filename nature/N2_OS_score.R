@@ -1,4 +1,4 @@
-cat("\n--------------------\nVERSION OF SCORING SCRIPT:\n14 Mar 2022 12:32pm\n--------------------\n")
+cat("\n--------------------\nVERSION OF SCORING SCRIPT:\n14 Mar 2022 5:50pm\n--------------------\n")
 
 library(dplyr)
 
@@ -12,7 +12,7 @@ score_nature2 = function(
   starttime = Sys.time()
   
   # check if data.frame, no import
-  if(is.data.frame(rawdata)) {d = rawdata)}
+  if(is.data.frame(rawdata)) {d = rawdata}
   
   # check if csv, import
   is_csv = grepl(".csv", rawdata)
