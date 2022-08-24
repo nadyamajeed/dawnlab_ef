@@ -1,29 +1,31 @@
-cat("\n--------------------\nVERSION OF SCORING SCRIPT:\n14 Mar 2022 5:50pm\n--------------------\n")
+cat("\n--------------------\nVERSION OF SCORING SCRIPT:\n24 Aug 2022 9:20am\n--------------------\n")
 
 library(dplyr)
+library(ggplot2)
 
 #####
 
 score_nature2 = function(
-  rawdata, anskey, serial = TRUE,
-  distractor_pattern = "DIST", recall_pattern = "RECALLSET",
-  cronbach = TRUE, show_progress = TRUE, debug = FALSE) {
+    rawdata, anskey, serial = TRUE,
+    distractor_pattern = "DIST", recall_pattern = "RECALLSET",
+    cronbach = TRUE, show_progress = TRUE, debug = FALSE) {
   
   starttime = Sys.time()
   
-  # check if data.frame, no import
-  if(is.data.frame(rawdata)) {d = rawdata}
-  
-  # check if csv, import
-  is_csv = grepl(".csv", rawdata)
-  if(is_csv) {d = read.csv(rawdata)}
-  
-  # check if sav, import
-  is_sav = grepl(".sav", rawdata)
-  if(is_sav) {d = haven::read_sav(rawdata)}
-  
-  # if not data.frame or csv or sav, stop function
-  if(!is.data.frame(rawdata) & !is_csv & !is_sav) stop("rawdata should be a data.frame, or a string ending in .csv or .sav!")
+  # check format of input data
+  if(is.data.frame(rawdata)) {
+    # check if data.frame, no import
+    d = rawdata
+  } else {
+    # check if csv, import
+    is_csv = grepl(".csv", rawdata)
+    if(is_csv) {d = read.csv(rawdata)}
+    # check if sav, import
+    is_sav = grepl(".sav", rawdata)
+    if(is_sav) {d = haven::read_sav(rawdata)}
+    # if not data.frame or csv or sav, stop function
+    if(!is.data.frame(rawdata) & !is_csv & !is_sav) stop("rawdata should be a data.frame, or a string ending in .csv or .sav!")
+  }
   
   # if debug, show
   if(debug) {cat("\nDebug point 1"); print(head(d))}
@@ -124,7 +126,6 @@ score_nature2 = function(
   if(is_sav) {haven::write_sav(d.out %>% haven::zap_label() %>% haven::zap_labels(), paste0(prefix, rawdata))}
   
   # visual inspection
-  library(ggplot2)
   p = ggplot(data = d.out, aes(x = distractorAcc, y = recallScore)) +
     geom_point(size = 0.25) +
     geom_vline(xintercept = 0.65, color = "red") +
