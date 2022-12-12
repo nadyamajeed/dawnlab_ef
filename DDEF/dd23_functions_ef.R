@@ -72,7 +72,8 @@ cleanTatoolGeneral = function(task.importlabel, path1, path2, debug = FALSE) {
       & participantID != "CLSC12B56PINK" & participantID != "CPCWINK15"
       & participantID != "KB17S65PURPLE" & participantID != "LEE07R76BLUE"
       & participantID != "SB07LAVENDER00BLUE" & participantID != "TTP04P98BLUE"
-      & userCode != "138051" & userCode != "138050"
+      & userCode != "138051" & userCode != "138050" 
+      & participantID != "DL11K97B" & participantID != "EC28T59BLUE" & participantID != "CSM22H12BLACK"
     ) %>%
     dplyr::select(-session.condition, -userCode, -moduleId)
 
